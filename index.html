@@ -1,89 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Merry Christmas</title>
-    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            height: 100vh;
-            background: linear-gradient(#c9e1e0, #fff) no-repeat;
-        }
-        #crackerWrapper {
-            cursor: pointer;
-            height: 120px;
-            width: 586px;
-            text-align: center;
-        }
-        #message {
-            position: absolute;
-            width: 100%;
-            text-align: center;
-            font-family: 'Berkshire Swash', cursive;
-            font-size: 30px;
-            color: #b81313;
-            text-shadow: 3px 3px #fff;
-        }
-        #jokeWrap {
-            width: 326px;
-            height: 100px;
-            position: absolute;
-            top: 10px;
-            left: 130px;
-            text-align: center;
-        }
-        #leftCracker, #rightCracker {
-            width: 300px;
-            height: 120px;
-        }
-        .end {
-            height: 120px;
-            width: 10px;
-            border-radius: 50%;
-            background-color: #c48300;
-        }
-        .handle {
-            height: 120px;
-            width: 50px;
-            background-color: #EEAE2D;
-        }
-        .body2 {
-            height: 120px;
-            width: 150px;
-            background-color: #eda71a;
-        }
-        .instructions {
-            position: absolute;
-            top: calc(50% + 150px);
-            font-size: 18px;
-            color: #333;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Christmas Cracker</title>
+  <link rel="stylesheet" href="style.css"> <!-- Link to the CSS file -->
 </head>
 <body>
-    <div id="crackerWrapper">
-        <h1 id="message">Merry <br> Christmas</h1>
-        <div id="jokeWrap">
-            <h3>joke</h3>
-            <h4>punchline</h4>
-        </div>
-        <div id="leftCracker">
-            <div class="handle"></div>
-            <div class="end"></div>
-            <div class="body2"></div>
-        </div>
-        <div id="rightCracker">
-            <div class="handle"></div>
-            <div class="end"></div>
-            <div class="body2"></div>
-        </div>
+  <div id="crackerWrapper">
+    <h1 id="message">Merry <br> Christmas</h1>
+    <div id="jokeWrap">
+      <h3 id="joke">joke</h3>
+      <h4 id="punchline">punchline</h4>
     </div>
-    <h1 class="instructions">Tap the cracker to pull it apart</h1>
+    <div id="leftCracker">
+      <div class="handle"></div>
+      <div class="end"></div>
+      <div class="handle2"></div>
+      <div class="ring"></div>
+      <div class="body"></div>
+      <div class="body2"></div>
+      <div class="zigzag">
+        <div class="zig1"></div>
+        <div class="zig1"></div>
+        <div class="zig1"></div>
+        <div class="zig1"></div>
+        <div class="zig1"></div>
+      </div>
+    </div>
+    <div id="rightCracker">
+      <div class="handle"></div>
+      <div class="end"></div>
+      <div class="handle2"></div>
+      <div class="ring"></div>
+      <div class="body"></div>
+      <div class="body2"></div>
+      <div class="zigzag">
+        <div class="zig1"></div>
+        <div class="zig1"></div>
+        <div class="zig1"></div>
+        <div class="zig1"></div>
+        <div class="zig1"></div>
+      </div>
+    </div>
+  </div>
+  <h1 class="instructions">Tap the cracker to pull it apart</h1>
+
+  <script src="script.js"></script> <!-- Link to the JavaScript file -->
 </body>
 </html>
