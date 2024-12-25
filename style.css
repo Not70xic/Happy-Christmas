@@ -1,3 +1,21 @@
+@keyframes left {
+  from {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+  to {
+    transform: translate(-140px, 80px) rotate(-30deg);
+  }
+}
+
+@keyframes right {
+  from {
+    transform: translate(0px, 0px) rotate(180deg);
+  }
+  to {
+    transform: translate(140px, 80px) rotate(210deg);
+  }
+}
+
 @import url(https://fonts.googleapis.com/css?family=Berkshire+Swash);
 
 body {
@@ -165,3 +183,15 @@ body {
   position: absolute;
   top: calc(50% + 150px);
 }
+
+/* Your existing styles */
+#crackerWrapper {
+  cursor: pointer;
+  height: 120px;
+  width: 586px;
+  transform: scaleX(1);
+  text-align: center;
+  transition: transform 0.5s ease; /* Smooth transform transition */
+}
+
+/* Add any necessary styling for other parts of the cracker */
