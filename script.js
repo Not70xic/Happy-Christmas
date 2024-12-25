@@ -6,15 +6,15 @@ const jokeWrap = document.getElementById("jokeWrap");
 const joke = document.getElementById("joke");
 const punchline = document.getElementById("punchline");
 
-const giftCardLink = "https://example.com/giftcard"; // Replace with your actual link
+const giftCardLink = "https://www.photobox.co.uk/"; // Replace with your actual link
 
 let counter = 0;
 
 cracker.addEventListener('click', () => {
-  if (counter < 13) {
+  if (counter < 10) {
     // Gradually "stretch" the cracker
     counter++;
-    cracker.style.transform = `scaleX(${1 + (counter / 100)})`; // Update cracker scale
+    cracker.style.transform = `scaleX(${1 + (counter / 10)})`; // Update cracker scale
   } else {
     // Pull apart the cracker and show the gift
     joke.innerHTML = `🎁 <a href="${giftCardLink}" target="_blank" style="color: #244B96; text-decoration: none; font-weight: bold;">Hope you can find enough pictures to use with this</a> 9ZA45Y3ZDB2F55E`;
